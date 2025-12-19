@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti ITC Rosera | Admission 2026-2028</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #b32d2e;
+            --dark-blue: #1a2a6c;
+            --gold: #ffcc00;
+            --white: #ffffff;
+            --bg-light: #f9f9f9;
+            --whatsapp-green: #25D366;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { background: var(--white); color: #333; line-height: 1.6; scroll-behavior: smooth; }
+
+        /* Header & Navigation */
+        nav {
+            background: var(--white);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo h2 { color: var(--primary-red); font-size: 1.4rem; }
+        .nav-right { display: flex; align-items: center; gap: 15px; }
+        .skill-india-img { height: 70px; width: auto; }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('jyoti-picture.jpg') no-repeat center center/cover;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; color: white; padding: 20px;
+        }
+        .hero h1 { font-size: clamp(1.8rem, 5vw, 3.2rem); margin-bottom: 10px; }
+        .session-badge { background: var(--gold); color: #000; padding: 10px 25px; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+
+        /* Application Button linked to Google Form */
+        .apply-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 18px 40px;
+            background: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(179, 45, 46, 0.4);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Notice Section */
+        .notice-section { 
+            background: #fff5f5; 
+            padding: 30px 5%; 
+            border-left: 8px solid var(--primary-red); 
+            margin: 30px 5%; 
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .notice-title { color: var(--primary-red); font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .notice-list { list-style: none; }
+        .notice-list li { padding: 8px 0; border-bottom: 1px dashed #ddd; display: flex; align-items: center; font-weight: 500; }
+        .notice-list li::before { content: "➤"; color: var(--primary-red); margin-right: 10px; }
+        .new-tag { background: red; color: white; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; margin-left: 10px; font-weight: bold; }
+
+        /* Floating WhatsApp Icon */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background-color: var(--whatsapp-green);
+            color: white; width: 65px; height: 65px; border-radius: 50px;
+            text-align: center; font-size: 35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+            z-index: 1001; display: flex; align-items: center; justify-content: center; text-decoration: none;
+            transition: 0.3s ease;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* Sections */
+        section { padding: 60px 8%; }
+        .section-title { text-align: center; margin-bottom: 40px; color: var(--primary-red); font-size: 2rem; border-bottom: 3px solid var(--gold); display: inline-block; left: 50%; position: relative; transform: translateX(-50%); padding-bottom: 10px; }
+
+        .trades-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .trade-card { background: var(--bg-light); padding: 30px; border-radius: 10px; border-top: 5px solid var(--primary-red); text-align: center; transition: 0.3s; }
+        .trade-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        /* Documents */
+        .docs-box { background: var(--dark-blue); color: white; padding: 40px; border-radius: 15px; }
+        .docs-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; list-style: none; }
+        .docs-list li::before { content: "✓ "; color: var(--gold); }
+        .alert-note { background: var(--gold); color: black; padding: 15px; border-radius: 8px; margin-top: 25px; text-align: center; font-weight: 900; }
+
+        footer { background: #111; color: white; text-align: center; padding: 40px; }
+
+        @media (max-width: 768px) { 
+            nav { flex-direction: column; text-align: center; padding: 15px; }
+            .nav-right { margin-top: 15px; }
+            .hero { height: 60vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/919709506515" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav>
+        <div class="logo">
+            <h2>Jyoti ITC Rosera</h2>
+            <p style="font-size: 0.8rem; font-weight: bold;">📍 Sahiyar Burj, Rosera (Bihar)</p>
+        </div>
+        <div class="nav-right">
+            <img src="skillindialogo.JPG" alt="Skill India Logo" class="skill-india-img">
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>ज्योति औद्योगिक प्रशिक्षण केन्द्र</h1>
+        <p>NCVT, Govt. of India | Skill India Partner</p>
+        <div class="session-badge">ADMISSION SESSION: 2026-28</div>
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0scg1IsvzoABrl0jnWXkCiVp_605uR117cq53AsXR3U7UgA/viewform?usp=dialog" 
+           target="_blank" class="apply-btn">
+           Click here to apply for admission
+        </a>
+    </section>
+
+    <div class="notice-section">
+        <h3 class="notice-title"><i class="fas fa-bullhorn"></i> Important Notice Board</h3>
+        <ul class="notice-list">
+            <li>Admission for the new session 2026-28 is now open. <span class="new-tag">NEW</span></li>
+            <li>Limited seats are available for Electrician and Fitter trades.</li>
+            <li>Scholarship options available for eligible candidates.</li>
+            <li>For direct assistance, call us at 9709506515.</li>
+        </ul>
+    </div>
+
+    <section id="trades">
+        <h2 class="section-title">Professional Trades</h2>
+        <div class="trades-grid">
+            <div class="trade-card">
+                <h3>Electrician (2 Year)</h3>
+                <p>Industrial & Domestic wiring, Power Systems training.</p>
+            </div>
+            <div class="trade-card">
+                <h3>Fitter (2 Year)</h3>
+                <p>Expertise in Machine Assembly, Fabrication & Maintenance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" style="background:#f1f1f1;">
+        <h2 class="section-title">Required Documents</h2>
+        <div class="docs-box">
+            <ul class="docs-list">
+                <li>10th Marksheet</li>
+                <li>Aadhar Card</li>
+                <li>Passport Size Photos</li>
+                <li>Caste Certificate</li>
+                <li>Income Certificate</li>
+                <li>Residence Certificate</li>
+                <li>Active Mobile Number</li>
+                <li>Email ID</li>
+            </ul>
+            <div class="alert-note">PLEASE ENSURE ALL ORIGINAL DOCUMENTS ARE AVAILABLE FOR VERIFICATION</div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Jyoti ITC Rosera</strong></p>
+        <p>Helpline: 9709506515 | 7979973734</p>
+        <p style="margin-top:10px; font-size:0.8rem; opacity:0.6;">© 2025 Jyoti ITC Rosera. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
