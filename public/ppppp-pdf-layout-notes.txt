@@ -1,0 +1,7 @@
+PPPPP.pdf inspection notes
+
+- The uploaded PDF contains 6 pages total.
+- Pages 1 to 4 are exercise pages for weeks 1 to 104, currently showing 26 exercises per page as 13 paired table rows.
+- Each exercise page leaves a very large blank area below the weekly table before the footer.
+- The user wants that bottom whitespace reduced while keeping all exercises visible on A4 and preserving the line beneath the final exercise area.
+- The current excess whitespace is caused primarily by too few weekly rows per page rather than missing content.
